@@ -12,7 +12,7 @@ export default function Main() {
     }, [dispatch, status]);
 
     return(
-        <main className="p-6 bg-gradient-to-br from-blue-50 via-white to-blue-100 min-h-screen">
+        <main className="p-6 bg-gradient-to-br from-blue-50 via-white to-blue-200 min-h-screen">
             <h1 className="text-4xl font-extrabold mb-8 text-center text-gray-900 drop-shadow-md">
                 포켓몬 도감
             </h1>

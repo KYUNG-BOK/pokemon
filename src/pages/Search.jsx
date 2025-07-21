@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 export default function Search() {
     const [query, setQuery] = useState('');
+    const [debouncedQuery, setDebouncedQuery] = useState('');
     const { list } = useSelector((state) => state.pokemon);
 
-    const filtered = list.filter((p) => p.name.includes(query.toLowerCase()));
+    // 디바운스 적용
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setDebouncedQuery(query.toLowerCase());
+        }, 300);
+
+        return () => clearTimeout(timeout);
+    }, [query]);
+
+    const filtered = list.filter((p) => 
+        p.koreanName.includes(debouncedQuery)
+    );
 
     return (
     <div className="p-4">
@@ -29,9 +41,9 @@ export default function Search() {
                     to={`/detail/${poke.id}`}
                     className="bg-white p-3 rounded shadow hover:shadow-lg transition"
                 >
-                    <img src={poke.front} alt={poke.name} className="mx-auto" />
+                    <img src={poke.front} alt={poke.koreanName} className="mx-auto" />
                 <p className="mt-3 text-lg sm:text-xl font-bold capitalize bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center">
-                    {poke.name}
+                    {poke.koreanName}
                 </p>
                 </Link>
             ))}

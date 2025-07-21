@@ -27,7 +27,7 @@ export default function Main() {
                     >
                         <img src={poke.front} alt={poke.name} className="w-24 h-24 object-contain" />
                         <h2 className="mt-3 text-lg sm:text-xl font-bold capitalize bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                            {poke.name}
+                            {poke.koreanName || poke.name}
                         </h2>
                     </Link>
                 ))}

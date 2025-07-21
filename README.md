@@ -70,13 +70,14 @@ src/
 ├── features/
 │   ├── pokemon/
 │   │   └── pokemonSlice.js     # 포켓몬 리스트 관리
-│   └── favorites/
-│       └── favoritesSlice.js   # 찜한 포켓몬 관리
+│   │   └── pokemonAPI.js       # `fetch` 기반 API 함수 분리
 └── app/
     └── store.js                # Redux 스토어 설정
 ```
 - /features/pokemon/pokemonSlice.js: 포켓몬 리스트 상태 관리
-- /features/favorites/favoritesSlice.js: 찜한 포켓몬 상태 관리
+- /features/pokemon/pokemonAPI.js: `fetch` 기반 API 함수 분리
+
+내일 추가할 예정입니다~
 
 ---
 

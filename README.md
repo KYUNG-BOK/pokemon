@@ -170,7 +170,7 @@ const Favorites = lazy(() => import('./pages/Favorites'));
 
 ## 7. 결과물
 
-- [pokemon.webm](https://github.com/user-attachments/assets/8a143853-ade0-45b0-832c-c120e8590847)
+[pokemon.webm](https://github.com/user-attachments/assets/8a143853-ade0-45b0-832c-c120e8590847)
 
 ---
 

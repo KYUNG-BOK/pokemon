@@ -1,4 +1,4 @@
-# Pokemon Search App (with Redux Toolkit & TailwindCSS)
+[pokemon.webm](https://github.com/user-attachments/assets/ccb83d8c-657f-4614-bf6a-548ad0d883a2)# Pokemon Search App (with Redux Toolkit & TailwindCSS)
 포켓몬 정보를 검색하고 찜할 수 있는 React 기반의 프로젝트입니다.
 
 ## 📦 기술 스택
@@ -152,5 +152,6 @@ const Favorites = lazy(() => import('./pages/Favorites'));
 
 ## 7. 결과물 같이 한번 보시죠.
 
-<video src="/pokemon.webm" controls width="100%" style="border-radius: 12px; margin-top: 1rem;" />
+[pokemon.webm](https://github.com/user-attachments/assets/8a143853-ade0-45b0-832c-c120e8590847)
+
 
